@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+body {
+    background: linear-gradient(90deg, #614385, #516395 100%);
+    height: 2000px;
+}
+
+main {
+    margin-top: 70px;
+    
+}
+
+#upper-nav {
+    display: flex;
+    /* background-color: #7562a044; */
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    top: 0;
+    left: 0;
+    gap: 10px;
+    box-shadow: 5px 1px 10px #3f1f8ad2;
+    
+}
+#comm1 {
+    flex: 1 1 90%;
+    flex-wrap: wrap;
+}
+
+#comm2 {
+    flex: 1 1 5%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#comm3 {
+    flex: 1 1 5%;
+    text-align: left;
+}
+
+.comm {
+    text-decoration: none;
+}
+
+#main-title {
+   font-size: 50px;
+   letter-spacing: -5px;
+   margin: 0px;
+   color: #f7c46d;
+   font-family: 'Poppins';
+   padding-left: 10px;
+}
+
+#login {
+    font-family: 'Poppins';
+    color: #f7c46d;
+}
+
+#sign-up {
+    font-family: 'Poppins';
+    color: #f7c46d;
+}
+
+.sidebar {
+    position: fixed;
+    width: 10%;
+    height: 100vh;
+    background: #7562a044;
+    font-size: 20px;
+    left: 0;
+    box-shadow: 5px 1px 10px #3f1f8ad2;
+}
+  
+.nav {
+    position: relative;
+    margin: 0 15%;
+    text-align: right;
+    top: 28%;
+    font-weight: bold;
+    
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    line-height: 250%;
+}
+
+li a {
+    text-decoration: none;
+    color: #f7c46d;
+    font-family: 'Rubik';
+    
+}
+
+  
+#main-text {
+    margin: 0;
+    height: 20vh;
+    display: inline-flex;
+    position: relative;
+    left: 400px;
+    top: 280px;
+    
+}
+
+#main-text h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 25vmin;
+  line-height: 20vmin;
+  margin: 0;
+
+}
+
+.gradient-text {
+    color: transparent;
+    background: conic-gradient(
+        #D9D7F1 12%, 
+        #BAABDA 12%, #BAABDA 33%, 
+        #E7FBBE 33%, #E7FBBE 55%, 
+        #FFCBCB 55%, #FFCBCB 70%, 
+        #B5DEFF 70%, #B5DEFF 87%, 
+        #F7D1BA 87%);
+    background-size: 50%;
+    background-clip: text;  
+    -webkit-background-clip: text;
+    animation: expand-rev 2s ease forwards;
+    cursor: default;
+}
+
+.gradient-text:hover {
+  animation: expand 2s ease forwards;
+}
+
+@keyframes expand {
+  0% {
+    background-size: 50%;
+    background-position: 0 0;
+  }
+  20% {
+    background-size: 55%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 325%;
+    background-position: -10em -4em;
+  }
+}
+
+@keyframes expand-rev {
+  0% {
+    background-size: 325%;
+    background-position: -10em -4em;
+  }
+  20% {
+    background-size: 55%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 50%;
+    background-position: 0 0;
+  }
+}
